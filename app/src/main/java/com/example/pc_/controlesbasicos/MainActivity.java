@@ -3,12 +3,15 @@ package com.example.pc_.controlesbasicos;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
+    String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,21 +35,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch(id){
+        switch (id) {
             case R.id.opc1:
-
-                break;
+                Toast.makeText(MainActivity.this, "Opcion 1", Toast.LENGTH_LONG).show();
+                return true;
             case R.id.opc2:
-                break;
+                Log.e(TAG, "onOptionsItemSelected: " + "opcion 2");
+                return true;
             case R.id.opc3:
+                Log.i(TAG, "onOptionsItemSelected: " + "opcion 3");
                 break;
             case R.id.opc4:
+                Log.d(TAG, "onOptionsItemSelected: " + "opcion 4");
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private void dialogo(){
-
     }
 }
