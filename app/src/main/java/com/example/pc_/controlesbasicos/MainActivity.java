@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
         tabLayout = (TabLayout) findViewById(R.id.main_TabLayout);
-        tabLayout.addTab(tabLayout.newTab().setText("Pestaña 1"));
-        tabLayout.addTab(tabLayout.newTab().setText("Pestaña 2"));
-        tabLayout.addTab(tabLayout.newTab().setText("Pestaña 3 "));
+        tabLayout.addTab(tabLayout.newTab().setText("asdasda"));
+        tabLayout.addTab(tabLayout.newTab().setText("sadasd"));
+        tabLayout.addTab(tabLayout.newTab().setText("weqw"));
 
 
 
