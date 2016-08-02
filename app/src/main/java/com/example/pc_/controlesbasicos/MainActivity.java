@@ -1,5 +1,6 @@
 package com.example.pc_.controlesbasicos;
 
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     String TAG = "MainActivity";
+    TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setSubtitle("Subtitulo :3");
         setSupportActionBar(toolbar);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
+        tabLayout = (TabLayout) findViewById(R.id.main_TabLayout);
+        tabLayout.addTab(tabLayout.newTab().setText("Pestaña 1"));
+        tabLayout.addTab(tabLayout.newTab().setText("Pestaña 2"));
+        tabLayout.addTab(tabLayout.newTab().setText("Pestaña 3 "));
+
+
+
     }
 
     @Override
