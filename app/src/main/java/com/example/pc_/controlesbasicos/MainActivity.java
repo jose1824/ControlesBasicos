@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch(id){
             case R.id.opc1:
+
                 break;
             case R.id.opc2:
                 break;
@@ -43,5 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void dialogo(){
+
     }
 }
